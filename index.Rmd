@@ -4,9 +4,11 @@ output:
   html_document:
     toc: true
     toc_float: true
-    theme: cerulean
 ---
 
 This is my personal page
 
+You learn about me [here](about.html)
+
 ![](images/carribean.jpg)
+
