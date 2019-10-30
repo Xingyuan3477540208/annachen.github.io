@@ -1,10 +1,53 @@
 ---
-title: "about"
+title: "Something About ME!!"
 output: 
   html_document:
     toc: true
     toc_float: true
 ---
 
+__Ocupation:__ Student
 
+__Hobbies:__ Traveling, Badminton, Skating
 
+__Education:__
+Columbia University, Mailman School of Public Health, New York, NY (May 2020)
+     Master of Public Health, Epidemiology (GPA 3.75)
+     Certificate in Comparative Effectiveness and Outcomes Research 
+
+__Skills:__
+Languages: SAS, R, STATA; Mandarin [Native], English [Fluent], Cantonese [Fluent]
+Certifications: SAS Certified Base Programmer, SAS Certified Advanced Programmer
+Software: TreeAge [Advanced], Excel [Advanced], Access, Adobe Illustrator, Power Point
+Technical Writing: 2 literatures reviews were published on the European Journal of BioMedical Research
+
+__Academic Project:__
+Columbia University, Epidemiology Department, New York, NY                             
+•	Conduct research to study an association between adverse health outcomes and concurrent use of opioids and benzodiazepines among the elderly as a part of the Longitudinal Research on Aging Drivers project
+•	Write literature reviews and research proposals, design the project by mapping the timeline and defining research methodology; Extract, transform, and analyze data by using SAS and R
+Jinan University, Food Science Department, Guangzhou, China                                 
+•	Led a research team of 3 students to evaluate the salutary effect of polysaccharides extracted from spring onions
+•	Designed and assigned the experiments from polysaccharide extraction, purification to evaluation and led the final presentation
+
+__Professional Experience:__
+NYC Department of Health and Mental Hygiene, New York, NY                       
+Bureau of Alcohol and Drug Use Prevention, Care and Treatment
+Naloxone Research Intern at Health Research Training Program 
+•	Test and improve existing data systems and documentation on opioid overdose, overdose education and naloxone distribution in New York city
+•	Clean and manage database by using SAS and support the development of surveys
+•	Facilitate activities of overdose education and naloxone dispense to provide community-based overdose recognition and prevention
+
+Mount Sinai Health System, New York, NY                                               
+Data Science Translation and Engagement Group Intern for CHEAR Program
+Children’s Health Exposure Analysis Resource (CHEAR) program was funded by NIEHS
+•	Annotated, standardized and integrated data from 34 CHEAR studies, which involve 43,981 specimens, 3,697 participants and 139 targeted chemicals with semantic data dictionary approach and metadata standards
+•	Communicated with primary investigators to clarify discrepancies and missing information in data dictionaries
+•	Established online data repository and optimized the existing CHEAR-developed ontologies to facilitate 1000+ CHEAR registered researchers to conduct secondary data analysis of pooled environmental health studies with easy data access and simple queries
+•	Compared and presented the strengths and limitations of meta-analyses and pooled analyses with CHEAR repository
+
+Amway China, Guangzhou, China                                                                                 
+Team Nutrilite Marketing Department Intern
+•	Participated in education-based marketing campaigns by designing lecture slides and speech notes with expertise in health and food science 
+•	Supported presenters in 20+ cities and traced their work progress over teleconference
+•	Facilitating training session for 200+ presenters from logistic, interview and feedback collection
+                                                                                                         

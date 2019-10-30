@@ -2,7 +2,14 @@ name: "my-website"
 navbar:
   title: "My Website"
   left:
-    - text: "Home"
-      href: index.html
     - text: "About"
       href: about.html
+    - text: "Plotly"
+      href: plotly.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<xc2473@columbia.edu>
+    - icon: fa-github fa-lg
+      href: http://github.com/xingyuan3477540208/
+output:
+  html_document:
+    theme: journal
