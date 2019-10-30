@@ -29,7 +29,23 @@ rest_inspec_1 =
   separate(inspection_date, into = c("inspection_year", "others"), sep = "\\-") %>% 
   filter(inspection_year >= 2014)
   
+score = 
+  rest_inspec_1 %>% 
+  select(score, inspection_year) %>% 
+  drop_na(score) %>% 
+  rename(violation_score = score)
 
+score %>% 
+  plot_ly(y = ~violation_score, color = ~inspection_year, type = "violin",
+          colors = "Set2")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
 flag = 
   rest_inspec_1 %>% 
   filter(critical_flag == "Critical") %>% 
@@ -44,26 +60,18 @@ flag %>%
   plot_ly(x = ~boro, y = ~critical_flag, color = ~boro, type = "bar")
 ```
 
-Column {data-width=350}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r}
-score = 
-  rest_inspec_1 %>% 
-  select(score, inspection_year) %>% 
-  drop_na(score) %>% 
-  rename(violation_score = score)
-
-score %>% 
-  plot_ly(y = ~violation_score, color = ~inspection_year, type = "violin",
-          colors = "Set2")
-```
-
 ### Chart C
 
 ```{r}
+scoreboro = 
+  rest_inspec_1 %>% 
+  select(score, boro) %>% 
+  drop_na(score, boro) %>% 
+  filter(boro != "Missing") %>% 
+  rename(violation_score = score)
 
+scoreboro %>% 
+  plot_ly(y = ~violation_score, color = ~boro, type = "box",
+          colors = "Set2")
 ```
 

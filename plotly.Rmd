@@ -35,7 +35,7 @@ flag %>%
   plot_ly(x = ~boro, y = ~critical_flag, color = ~boro, type = "bar")
 ```
 
-```{r score}
+```{r scoreyear}
 score = 
   rest_inspec_1 %>% 
   select(score, inspection_year) %>% 
@@ -48,6 +48,18 @@ score %>%
 ```
 
 ˆ
-```{r}
+```{r scoreboro}
+scoreboro = 
+  rest_inspec_1 %>% 
+  select(score, boro) %>% 
+  drop_na(score, boro) %>% 
+  filter(boro != "Missing") %>% 
+  rename(violation_score = score)
 
+scoreboro %>% 
+  plot_ly(y = ~violation_score, color = ~boro, type = "box",
+          colors = "Set2")
+  
+  
+  
 ```
