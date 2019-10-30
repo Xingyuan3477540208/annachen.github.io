@@ -8,7 +8,7 @@ output:
 
 This is my personal page
 
-You learn about me [here](about.html)
+You learn about me [here](./about.html)
 
 ![](images/carribean.jpg)
 

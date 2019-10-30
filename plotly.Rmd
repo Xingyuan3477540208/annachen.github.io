@@ -3,3 +3,51 @@ title: "ploty"
 output: html_document
 ---
 
+```{r}
+library(tidyverse)
+library(viridis)
+library(plotly)
+```
+
+```{r}
+
+library(p8105.datasets)
+data("rest_inspec")
+
+rest_inspec_1 = 
+  rest_inspec %>% 
+  select(action, boro, critical_flag, cuisine_description, dba, inspection_date, violation_code, violation_description, grade, grade_date, score) %>% 
+  separate(inspection_date, into = c("inspection_year", "others"), sep = "\\-") %>% 
+  filter(inspection_year >= 2014)
+  
+
+flag = 
+  rest_inspec_1 %>% 
+  filter(critical_flag == "Critical") %>% 
+  group_by(boro) %>% 
+  summarize(critical_flag = n()) %>% 
+  filter(boro != "Missing") %>% 
+  ungroup() %>% 
+  mutate(boro = as.factor((boro)),
+         boro = fct_reorder(boro, critical_flag))
+
+flag %>% 
+  plot_ly(x = ~boro, y = ~critical_flag, color = ~boro, type = "bar")
+```
+
+```{r score}
+score = 
+  rest_inspec_1 %>% 
+  select(score, inspection_year) %>% 
+  drop_na(score) %>% 
+  rename(violation_score = score)
+
+score %>% 
+  plot_ly(y = ~violation_score, color = ~inspection_year, type = "violin",
+          colors = "Set2")
+```
+
+ˆ
+```{r}
+
+```
