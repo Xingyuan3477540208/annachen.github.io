@@ -12,4 +12,4 @@ navbar:
       href: http://github.com/xingyuan3477540208/
 output:
   html_document:
-    theme: journal
+    theme: minty
