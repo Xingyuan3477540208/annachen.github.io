@@ -1,14 +1,15 @@
 ---
-title: "Anna Chen's Website"
-output: 
-  html_document:
-    toc: true
-    toc_float: true
 ---
 
-This is my personal page
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<img src="images/carribean.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+
+
+Hi! Welcome to my personal website! I'm so excited to introduce myself to you.
+
+I'm a second year master student at Columbia University studying Epidemiology. I like to analyze data to answer research questions and test hypotheses. I really enjoy talking to people with different professional and cultural backgrounds. 
 
 You learn about me [here](./about.html)
 
-![](images/carribean.jpg)
 

@@ -1,9 +1,12 @@
 name: "my-website"
+output_dir: "."
 navbar:
-  title: "My Website"
-  left:
-    - text: "About"
+  title: "Anna Chen"
+  right:
+    - text: "Professional Page"
       href: about.html
+    - text: "Personal Page"
+      href: lives.html      
     - text: "Plotly"
       href: flexboard.html
     - icon: fa-envelope fa-lg
@@ -12,4 +15,6 @@ navbar:
       href: http://github.com/xingyuan3477540208/
 output:
   html_document:
-    theme: minty
+    theme: readable
+    css: style.css
+
