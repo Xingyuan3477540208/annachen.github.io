@@ -1,0 +1,16 @@
+
+---
+title: "Something other than school!"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+__Hobbies:__ Traveling, Badminton, Skating
+
+![](images/IMG-1398.JPG)
+
+![](images/IMG-1580.JPG)
+
+![](images/IMG-5325.JPG)
